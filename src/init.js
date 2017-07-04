@@ -5,6 +5,26 @@ $(document).ready(function() {
     $('.dancer').css('left', '0');
   });
 
+  // var isNear = function( $element, distance, event ) {
+    
+  //   var left = $element.offset().left - distance,
+  //     top = $element.offset().top - distance,
+  //     right = left + $element.width() + ( 2 * distance ),
+  //     bottom = top + $element.height() + ( 2 * distance ),
+  //     x = event.pageX,
+  //     y = event.pageY;
+        
+  //   return ( x > left && x < right && y > top && y < bottom );
+    
+  // };
+
+  // $('body').mousemove(function(event) {
+
+  //   if(isNear($('.dancer'), 10, event)) {
+  //     $('.dancer').toggle();
+  //   }
+  // });
+
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
