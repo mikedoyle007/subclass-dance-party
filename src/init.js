@@ -5,6 +5,12 @@ $(document).ready(function() {
     $('.dancer').css('left', '0');
   });
 
+  $('.frontAndCenter').on('click', function(event) {
+    console.log('clicked button front and center');
+    $('.psy').css({'left': '50%', 'top': '50%'});
+    $('.otherGuy').css({'left': '50%', 'top': '30%'});
+  });
+
   // var isNear = function( $element, distance, event ) {
     
   //   var left = $element.offset().left - distance,

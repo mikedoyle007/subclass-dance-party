@@ -1,5 +1,6 @@
 var MakeBabyDancer = function(top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps);
+  //this.$node = $('<span class="dancer psy"></span>');
 };
 
 MakeBabyDancer.prototype = Object.create(MakeDancer.prototype);
@@ -15,6 +16,7 @@ MakeBabyDancer.prototype.setPosition = function(top, left) {
     left: left
   };
   this.$node.css(styleSettings);
+  this.$node.addClass('psy');
   this.$node.html('<img src="src/dancingBaby.gif">');
   this.$node.css('border', "none");
 };

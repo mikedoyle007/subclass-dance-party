@@ -15,6 +15,7 @@ MakeHipThruster.prototype.setPosition = function(top, left) {
     left: left
   };
   this.$node.css(styleSettings);
+  this.$node.addClass('otherGuy');
   this.$node.html('<img src="src/hipthrust.gif">');
   this.$node.css('border', "none");
 };
